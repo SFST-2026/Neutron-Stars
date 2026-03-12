@@ -1,0 +1,50 @@
+\section*{Core equations and notation}
+
+We work in geometrized units \(c=G=1\). For the energy density \(\varepsilon(r)\), pressure \(P(r)\), and enclosed mass \(m(r)\) the Tolman--Oppenheimer--Volkoff equations read
+\[
+\frac{dm}{dr}=4\pi r^{2}\,\varepsilon(r),
+\qquad
+\frac{dP}{dr}=-(\varepsilon+P)\,\frac{m+4\pi r^{3}P}{r(r-2m)}.
+\]
+
+\subsection*{Variant A: inertial (enthalpy) dressing}
+The vacuum-induced response modifies only the inertial (enthalpy) factor:
+\[
+(\varepsilon+P)\;\longrightarrow\;(\varepsilon+P)\,\bigl[1+I(r;\sigma,x)\bigr],
+\]
+where \(I(r;\sigma,x)\) is a dimensionless dressing function and \(\sigma\) denotes the scan parameter (we set \(x=1\) throughout the main analysis).
+
+\subsection*{Perturbativity diagnostic}
+Define the local perturbativity metric
+\[
+\mathrm{epsratio}(r)=\frac{\varepsilon_{\mathrm{vac,inertial}}(r)}{\varepsilon_{\mathrm{ref}}(r)}.
+\]
+Headline results are restricted to
+\[
+\max_{r}|\mathrm{epsratio}(r)| \le 0.10,
+\]
+with \(0.10<\max|\mathrm{epsratio}|\le 0.30\) reported as stress tests and \(\max|\mathrm{epsratio}|>0.30\) excluded.
+
+\subsection*{Reactive kernel and effective inertial coefficient}
+The low-frequency expansion of the reactive kernel is
+\[
+K_{R}(\omega)=K_{R}(0)+\tfrac{1}{2}m_{\rm vac}\,\omega^{2}+O(\omega^{4}),
+\qquad
+m_{\rm vac}=\left.\frac{d^{2}K_{R}}{d\omega^{2}}\right|_{\omega=0}.
+\]
+We parameterize
+\[
+m_{\rm vac}=C_{\rm conv}\,\sigma\,x,
+\]
+and adopt \(C_{\rm conv}=1\), \(x=1\) so that \(\sigma\) is the single scan dial.
+
+\subsection*{Uncertainty propagation}
+For an observable \(O(\sigma)\) the matching contribution in the linear regime is
+\[
+\sigma_{O,\mathrm{match}}=\left|\frac{dO}{d\sigma}\right|\,\sigma_{\mathrm{match}},
+\]
+and the total uncertainty is combined as
+\[
+\sigma_{\mathrm{total}}=\sqrt{\sigma_{\mathrm{disc}}^{2}+\sigma_{\mathrm{match}}^{2}+\sigma_{\mathrm{MC}}^{2}}.
+\]
+If nonlinearity is flagged, linear propagation is replaced by Monte-Carlo envelope propagation through the fitted \(O(\sigma)\) curve and the median with 5--95\% interval is reported.
