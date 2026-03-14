@@ -1,1 +1,7 @@
-
+EOS,sigma,model,Mmax,R14,Lambda14
+SLy,0.0,baseline,2.0752,11.133,577.35
+SLy,0.06,afterburner,2.0061,10.927,519.04
+SLy,0.06,proxy_refit,1.9685,10.635,446.65
+AP4,0.0,baseline,2.2071,10.776,549.46
+AP4,0.06,afterburner,2.1435,10.614,495.38
+AP4,0.06,proxy_refit,2.1033,10.342,427.37
